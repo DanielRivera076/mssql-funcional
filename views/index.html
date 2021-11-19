@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <form  id="btn" action="">
+        <input type="text" placeholder="input" id="entry">
+        <input type="text" id="date">
+
+        <input  type="submit" value='enviar' id="btn">
+    </form>
+    <script>
+        const persona = {
+            nombre : 'Daniel',
+            apellido : 'Rivera',
+            edad : 23,
+            casado : false,
+        };
+        const getPersona = ({ nombre, apellido, edad, casado }) =>{
+
+            console.log({nombre});
+            console.log({apellido});
+            console.log({edad});
+            console.log({casado});
+
+        }
+
+        
+        const persona2 = { ...persona };
+        console.log(persona2);
+        console.warn('comandos de funcion persona');
+        getPersona(persona2);
+    </script>
+</body>
+</html>
